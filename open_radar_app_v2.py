@@ -328,7 +328,7 @@ else:
     st.warning("현재는 미국 주식 휴장 시간입니다.")
 
 with st.expander("⚙️ 조건 설정", expanded=False):
-    min_price = st.number_input("최소 주가 ($)", min_value=1.0, value=5.0, step=1.0)
+    min_price = st.number_input("최소 주가 ($)", min_value=0.1, value=0.5, step=0.1)
     min_adv = st.number_input("최소 평균 거래대금 ($M)", min_value=1, value=20, step=5)
     min_move = st.number_input("최소 전일종가 대비 상승률 (%)", value=1.0, step=.5)
     min_rvol = st.number_input("최소 상대거래량 지표", min_value=.1, value=1.2, step=.1)
