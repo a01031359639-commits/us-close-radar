@@ -261,7 +261,7 @@ m2.metric("한국", now_kst.strftime("%H:%M"))
 st.markdown(f"**시장 상태:** {status}")
 
 with st.expander("⚙️ 조건 설정", expanded=False):
-    min_price = st.number_input("최소 주가 ($)", min_value=1.0, value=5.0, step=1.0)
+    min_price = st.number_input("최소 주가 ($)", min_value=0.1, value=0.5, step=0.1)
     min_adv = st.number_input("최소 평균 거래대금 ($M)", min_value=1, value=20, step=5)
     min_change = st.number_input("최소 당일 상승률 (%)", value=1.0, step=.5)
     min_rvol = st.number_input("최소 RVOL", min_value=.1, value=1.2, step=.1)
